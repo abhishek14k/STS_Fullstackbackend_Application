@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.demo.fullstackbackend.model.User;
@@ -27,9 +26,5 @@ public class UserController {
 	List<User> getAllUsers() {
 		return userRepository.findAll();
 	}
-	
-//	@PutMapping("/user/{id}")
-//	List<User> getAllUsers() {
-//		return userRepository.findAll();
-//	}
+
 }
